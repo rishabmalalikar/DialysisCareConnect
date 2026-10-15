@@ -30,11 +30,46 @@ Update this section to match the technologies used in your implementation.
 ## Project Structure
 
 ```text
-DialysisAppointmentSystem/
-├── client/             # React frontend
-├── server/             # Node.js and Express backend
-├── README.md
-└── .gitignore
+DialysisCareConnect/
+┣ 📂backend
+┃ ┣ 📂src
+┃ ┃ ┣ 📂config
+┃ ┃ ┃ ┗ 📜db.js
+┃ ┃ ┣ 📂controllers
+┃ ┃ ┃ ┣ 📜patientController.js
+┃ ┃ ┃ ┣ 📜user.controller.js
+┃ ┃ ┃ ┗ 📜whatsappController.js
+┃ ┃ ┣ 📂middlewares
+┃ ┃ ┣ 📂models
+┃ ┃ ┃ ┗ 📜user.model.js
+┃ ┃ ┣ 📂routes
+┃ ┃ ┃ ┣ 📜patientRoutes.js
+┃ ┃ ┃ ┣ 📜user.route.js
+┃ ┃ ┃ ┗ 📜whatsappRoutes.js
+┃ ┃ ┣ 📂services
+┃ ┃ ┃ ┗ 📜user.service.js
+┃ ┃ ┣ 📂utils
+┃ ┃ ┗ 📜index.js
+┃ ┣ 📜.env
+┃ ┣ 📜.gitignore
+┃ ┗ 📜package.json
+┣ 📂frontend
+┃ ┣ 📂public
+┃ ┃ ┗ 📜dialysis-machine.png
+┃ ┣ 📂src
+┃ ┃ ┣ 📂assets
+┃ ┃ ┣ 📜App.css
+┃ ┃ ┣ 📜App.jsx
+┃ ┃ ┣ 📜index.css
+┃ ┃ ┗ 📜main.jsx
+┃ ┣ 📜.gitignore
+┃ ┣ 📜.oxlintrc.json
+┃ ┣ 📜index.html
+┃ ┣ 📜package.json
+┃ ┣ 📜README.md
+┃ ┗ 📜vite.config.js
+┗ 📜README.md
+
 ```
 
 *The directory structure above is illustrative; adjust it to match your actual project.*
